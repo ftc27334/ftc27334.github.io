@@ -8176,6 +8176,19 @@ input, select, textarea {
 
 /* Index */
 
+#blink_text {
+	animation-name: blink;
+	animation-duration: 1s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+	0% { color: red; }
+	50% { color: white; }
+	100% { color: red; }
+}
+
 	.index > * {
 		padding: 3rem 0 1rem 0 ;
 		display: -moz-flex;
